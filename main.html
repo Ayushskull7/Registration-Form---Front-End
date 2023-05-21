@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Heading">
+        Registration Form
+    </div>
+
+    <div class="Form-Details">
+        <form>
+            <label for="nameInput">Name:<br>
+                <input type="text" class="Input" id="name" required>
+            </label><br>
+
+            <label for="gender">Gender:<br>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </label><br>
+
+            <label for="dobInput">Date of Birth:<br>
+                <input type="date" class="Input" id="dob" required>
+            </label><br>
+
+            <label for="emailInput">Email ID:<br>
+                <input type="email" class="Input" id="email" required>
+            </label><br>
+
+            <label for="q1">Address:<br>
+                <textarea name="address" id="address" cols="35" rows="1" class="Input"></textarea>
+            </label><br>
+
+            <label for="q2">Describe Yourself (50 Words):<br>
+                <textarea name="ans1" id="desc" cols="35" rows="5" class="Input"></textarea>
+            </label><br>
+
+            <label for="q3">Why Should We Consider You:<br>
+                <textarea name="ans1" id="why" cols="35" rows="5" class="Input"></textarea>
+            </label><br>
+
+            <label for="curKnowledge">Select Your Current Knowledge:<br>
+                <select id="curKnowledge" class="Input" multiple>
+                    <option value="SeniosSecSc">Senior Secondary School</option>
+                    <option value="hs">High School</option>
+                    <option value="ug">UG</option>
+                    <option value="pg">PG</option>
+                    <option value="Masters">Masters</option>
+                </select>
+            </label><br>
+
+            <label for="ConvinientTS">Convenient Time Slot For In-Person Meeting:<br>
+                <label><input type="checkbox" name="convenientTimeSlot" value="11am-12pm"> 11am-12pm</label>
+                <label><input type="checkbox" name="convenientTimeSlot" value="12pm-1pm"> 12pm-1pm</label>
+                <label><input type="checkbox" name="convenientTimeSlot" value="4pm-5pm"> 4pm-5pm</label>
+            </label><br>
+
+            <label for="rating">Rate Your Experience:<br>
+                <input type="range" min="1" max="10" class="Input" id="rating">
+            </label><br>
+
+            <button type="submit" id="button" class="button">
+                Submit
+            </button>
+        </form>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
